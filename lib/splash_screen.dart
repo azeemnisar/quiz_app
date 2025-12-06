@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:cognitive_quiz/utills/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -41,15 +42,15 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      // body: Center(
-      //   child: Image.asset(
-      //     AppImages.logo,
-      //     height: 200.h,
-      //     width: 0.93.sw,
-      //     fit: BoxFit.contain,
-      //   ),
-      // ),
+      backgroundColor: Colors.grey,
+      body: Center(
+        child: Image.asset(
+          AppImages.logo,
+          height: 200.h,
+          width: 0.93.sw,
+          fit: BoxFit.contain,
+        ),
+      ),
     );
   }
 }
