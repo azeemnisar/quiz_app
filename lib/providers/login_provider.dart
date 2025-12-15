@@ -1,7 +1,6 @@
 import 'package:cognitive_quiz/models/login_model.dart';
 import 'package:cognitive_quiz/utills/app_consultant.dart';
 import 'package:cognitive_quiz/utills/colors.dart';
-import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
@@ -104,22 +103,46 @@ class LoginProvider with ChangeNotifier {
   //   Get.offAll(() => Login());
   // }
 
-  Future<void> logout() async {
-    // 1️⃣ Clear saved token (so user is logged out)
-    await AppConstant.clearUserToken();
+  // Future<void> loginAsGuest() async {
+  //   // ❌ DO NOT persist guest
+  //   // Guest is session-only
 
-    // 2️⃣ Clear stored login response
-    _loginResponse = null;
-    notifyListeners();
+  //   AppConstant.getUserToken = AppUrl.guest_user;
+  //   AppConstant.isGuest = true; // runtime flag only
 
-    // 3️⃣ Clear old profile data
-    try {
-      Provider.of<ProfileProvider>(Get.context!, listen: false).clearProfile();
-    } catch (e) {
-      debugPrint("⚠️ ProfileProvider not found: $e");
-    }
+  //   // Clear any previous login response
+  //   _loginResponse = null;
+  //   notifyListeners();
 
-    // 4️⃣ Navigate to login page
-    Get.offAll(() => Login());
-  }
+  //   // Navigate to Home / NavBar
+  //   Get.offAll(() => const HomeScreen()); // or NavBarScreen if used
+
+  //   // Show message
+  //   Get.snackbar(
+  //     'Welcome',
+  //     'You are using the app as a Guest',
+  //     snackPosition: SnackPosition.BOTTOM,
+  //     backgroundColor: Colors.transparent,
+  //     colorText: Colors.black,
+  //   );
+  // }
+
+  // Future<void> logout() async {
+  //   // 1️⃣ Clear saved token (so user is logged out)
+  //   await AppConstant.clearUserToken();
+
+  //   // 2️⃣ Clear stored login response
+  //   _loginResponse = null;
+  //   notifyListeners();
+
+  //   // 3️⃣ Clear old profile data
+  //   try {
+  //     Provider.of<ProfileProvider>(Get.context!, listen: false).clearProfile();
+  //   } catch (e) {
+  //     debugPrint("⚠️ ProfileProvider not found: $e");
+  //   }
+
+  //   // 4️⃣ Navigate to login page
+  //   Get.offAll(() => Login());
+  // }
 }
