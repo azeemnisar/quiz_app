@@ -1,10 +1,10 @@
 import 'package:cognitive_quiz/utills/colors.dart';
 import 'package:cognitive_quiz/utills/custom_image.dart';
 import 'package:cognitive_quiz/utills/images.dart';
+import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-
 
 class Welcome3Screen extends StatefulWidget {
   const Welcome3Screen({super.key});
@@ -28,7 +28,7 @@ class _Welcome3ScreenState extends State<Welcome3Screen> {
       body: Stack(
         children: [
           // 🔹 Skip button
-         Positioned(
+          Positioned(
             top: 40,
             right: 20,
             child: GestureDetector(
@@ -36,7 +36,7 @@ class _Welcome3ScreenState extends State<Welcome3Screen> {
                 // 👇 Your onPressed action here
                 // Example: Navigate to Login/Home screen
                 // Get.to(const LoginScreen());
-                // Get.to(Login());
+                //Get.to(Login());
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(

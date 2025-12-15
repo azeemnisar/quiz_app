@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cognitive_quiz/utills/colors.dart';
 import 'package:cognitive_quiz/utills/custom_image.dart';
 import 'package:cognitive_quiz/utills/images.dart';
+import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:cognitive_quiz/views/welcome3_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -46,8 +47,8 @@ class _Welcome2ScreenState extends State<Welcome2Screen> {
               onTap: () {
                 // 👇 Your onPressed action here
                 // Example: Navigate to Login/Home screen
-                // Get.to(const LoginScreen());
-                // Get.to(Login());
+                //Get.to(const LoginScreen());
+                //Get.to(Login());
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(
@@ -65,8 +66,7 @@ class _Welcome2ScreenState extends State<Welcome2Screen> {
               ),
             ),
           ),
-          
-          
+
           // es (background + foreground)
           Padding(
             padding: EdgeInsets.only(top: screenHeight * 0.12),
