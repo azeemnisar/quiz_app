@@ -1,5 +1,7 @@
 import 'dart:async';
+import 'package:cognitive_quiz/utills/app_consultant.dart';
 import 'package:cognitive_quiz/utills/images.dart';
+import 'package:cognitive_quiz/views/welcome1_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -20,24 +22,24 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // _checkLoginStatus();
+    _checkLoginStatus();
   }
 
   /// ✅ Check login status and navigate accordingly
-  // Future<void> _checkLoginStatus() async {
-  //   await Future.delayed(const Duration(seconds: 3)); // splash delay
-  //   bool loggedIn = await AppConstant.isLoggedIn();
+  Future<void> _checkLoginStatus() async {
+    await Future.delayed(const Duration(seconds: 3)); // splash delay
+    bool loggedIn = await AppConstant.isLoggedIn();
 
-  //   if (mounted) {
-  //     if (loggedIn) {
-  //       // ✅ Navigate to HomeScreen if user token exists
-  //       Get.offAll(() => const HomeScreen());
-  //     } else {
-  //       // 🚀 Navigate to Welcome1Screen if not logged in
-  //       Get.offAll(() => const Welcome1Screen());
-  //     }
-  //   }
-  // }
+    if (mounted) {
+      if (loggedIn) {
+        // ✅ Navigate to HomeScreen if user token exists
+        //Get.offAll(() => const HomeScreen());
+      } else {
+        // 🚀 Navigate to Welcome1Screen if not logged in
+        Get.offAll(() => const Welcome1Screen());
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
