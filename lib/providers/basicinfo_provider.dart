@@ -1,8 +1,8 @@
 import 'package:cognitive_quiz/API_Services/repo.dart';
 import 'package:cognitive_quiz/models/basicinfo_model.dart';
 import 'package:flutter/foundation.dart';
-import 'package:quiz/api_Services/repo.dart';
-import 'package:quiz/model/basicinfo_model.dart';
+// import 'package:quiz/api_Services/repo.dart';
+// import 'package:quiz/model/basicinfo_model.dart';
 
 class BasicInfoProvider with ChangeNotifier {
   final ApiService apiService = ApiService();

@@ -36,7 +36,7 @@ class _Welcome3ScreenState extends State<Welcome3Screen> {
                 // 👇 Your onPressed action here
                 // Example: Navigate to Login/Home screen
                 // Get.to(const LoginScreen());
-                //Get.to(Login());
+                Get.to(Login());
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(
@@ -171,7 +171,7 @@ class _Welcome3ScreenState extends State<Welcome3Screen> {
                             // 👉 Navigate to Login/Home here
                             // Example:
                             // Get.to(const LoginScreen());
-                            // Get.to(Login());
+                            Get.to(Login());
                           },
                           child: Container(
                             height: 60,

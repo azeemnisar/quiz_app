@@ -48,7 +48,7 @@ class _Welcome2ScreenState extends State<Welcome2Screen> {
                 // 👇 Your onPressed action here
                 // Example: Navigate to Login/Home screen
                 //Get.to(const LoginScreen());
-                //Get.to(Login());
+                Get.to(Login());
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(

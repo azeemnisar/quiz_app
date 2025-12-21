@@ -2,9 +2,11 @@ import 'dart:async';
 import 'package:cognitive_quiz/utills/colors.dart';
 import 'package:cognitive_quiz/utills/custom_image.dart';
 import 'package:cognitive_quiz/utills/images.dart';
+import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:cognitive_quiz/views/welcome2_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 class Welcome1Screen extends StatefulWidget {
   const Welcome1Screen({super.key});
 
@@ -45,7 +47,7 @@ class _Welcome1ScreenState extends State<Welcome1Screen> {
                 // 👇 Your onPressed action here
                 // Example: Navigate to Login/Home screen
                 // Get.to(const LoginScreen());
-                // Get.to(Login());
+                Get.to(Login());
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(
