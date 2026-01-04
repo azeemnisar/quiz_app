@@ -7,12 +7,12 @@ class AppImages {
   static const String Welcome3 = "assets/images/welcome3.png";
   static const String loginbg = "assets/images/background.png";
   static const String emailbg = "assets/images/emailbd.png";
-  // static const String profilebg = "assets/images/profilebg.png";
-  // static const String male = "assets/images/man.png";
-  // static const String female = "assets/images/woman.png";
-  // static const String others = "assets/images/transgender.png";
-  // static const String editbg = "assets/images/pbd.png";
-  // static const String error_image = "assets/images/error_image.jpg";
-  // static const String result_image = "assets/images/result_image.png";
-  // static const String bot = "assets/images/bot.png";
+  static const String profilebg = "assets/images/profilebg.png";
+  static const String male = "assets/images/man.png";
+  static const String female = "assets/images/woman.png";
+  static const String others = "assets/images/transgender.png";
+  static const String editbg = "assets/images/pbd.png";
+  static const String error_image = "assets/images/error_image.jpg";
+  static const String result_image = "assets/images/result_image.png";
+  static const String bot = "assets/images/bot.png";
 }
