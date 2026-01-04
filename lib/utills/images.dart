@@ -7,6 +7,14 @@ class AppImages {
   static const String Welcome3 = "assets/images/welcome3.png";
   static const String loginbg = "assets/images/background.png";
   static const String emailbg = "assets/images/emailbd.png";
+
+  static String? get profilebg => null;
+
+  static String? get male => null;
+
+  static String? get female => null;
+
+  static String? get others => null;
   // static const String profilebg = "assets/images/profilebg.png";
   // static const String male = "assets/images/man.png";
   // static const String female = "assets/images/woman.png";
