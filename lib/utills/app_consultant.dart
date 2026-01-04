@@ -9,6 +9,7 @@ class AppConstant {
   static String saveUserEmail = 'saveUserEmail';
   static String saveUserPassword = 'saveUserPassword';
   static String saveUserAPIKey = 'saveUserAPIKey'; // ✅ Added for API key
+  static bool isGuest = false; // ✅ ADD THIS LINE
 
   // Runtime variables
   static String userFcmToken = '';

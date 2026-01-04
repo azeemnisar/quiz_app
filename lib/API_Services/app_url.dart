@@ -1,5 +1,6 @@
 class AppUrl {
-  // static const String baseUrl = 'https://cf6a732c447c.ngrok-free.app/api';
+  // static const String baseUrl =
+  //     'https://malisa-preelective-romelia.ngrok-free.dev/api';
   static const String baseUrl = 'https://cognitiveaudit.logicvalleyllc.us/api';
   static const String imageBaseUrl =
       'https://cognitiveaudit.logicvalleyllc.us/public';
@@ -36,7 +37,8 @@ class AppUrl {
 
   static const String getlevel = '/quiz-level';
   static const String add_level = '/level-profile';
-
+  static const String guest_user =
+      '408|TP7qQObXdYqCNQABtm4ZXPCms4rG8tsTe1G4N8Yy368b74cd';
   // messgaing
   static const String mesasging = '/send-message';
 }

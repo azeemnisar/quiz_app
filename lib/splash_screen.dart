@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:cognitive_quiz/utills/app_consultant.dart';
 import 'package:cognitive_quiz/utills/images.dart';
+import 'package:cognitive_quiz/views/home_screen.dart';
 import 'package:cognitive_quiz/views/welcome1_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -33,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
     if (mounted) {
       if (loggedIn) {
         // ✅ Navigate to HomeScreen if user token exists
-        //Get.offAll(() => const HomeScreen());
+        Get.offAll(() => const HomeScreen());
       } else {
         // 🚀 Navigate to Welcome1Screen if not logged in
         Get.offAll(() => const Welcome1Screen());

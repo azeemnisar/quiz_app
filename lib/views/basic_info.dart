@@ -2,8 +2,11 @@ import 'package:cognitive_quiz/providers/basicinfo_provider.dart';
 import 'package:cognitive_quiz/utills/colors.dart';
 import 'package:cognitive_quiz/utills/custom_image.dart';
 import 'package:cognitive_quiz/utills/images.dart';
+import 'package:cognitive_quiz/views/profile1_screen.dart';
+import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 // import 'package:provider/provider.dart';
 // import 'package:quiz/provider/basicinfo_provider.dart';
 // import 'package:quiz/utils/colors.dart';
@@ -57,9 +60,9 @@ class _BasicInfoScreenState extends State<BasicInfoScreen> {
                 top: 40,
                 right: 10,
                 child: GestureDetector(
-                  onTap: () {
-                    Get.offAll(const HomeScreen());
-                  },
+                  // onTap: () {
+                  //   Get.offAll(const HomeScreen());
+                  // },
                   child: Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 14,

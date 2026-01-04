@@ -1,13 +1,21 @@
 import 'package:cognitive_quiz/API_Services/app_url.dart';
 import 'package:cognitive_quiz/models/login_model.dart';
+import 'package:cognitive_quiz/providers/profile_provider.dart';
 import 'package:cognitive_quiz/utills/app_consultant.dart';
 import 'package:cognitive_quiz/utills/colors.dart';
+import 'package:cognitive_quiz/views/home_screen.dart';
 import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-
+// import 'package:quiz/api_Services/app_url.dart';
+// import 'package:quiz/model/login_model.dart';
+// import 'package:quiz/provider/profile_provider.dart';
+// import 'package:quiz/utils/app_consultant.dart';
+// import 'package:quiz/utils/colors.dart';
+// import 'package:quiz/views/home_screen.dart';
+// import 'package:quiz/views/sign_inscreeen.dart';
 import '../api_Services/repo.dart';
 
 class LoginProvider with ChangeNotifier {
@@ -110,15 +118,15 @@ class LoginProvider with ChangeNotifier {
     // ❌ DO NOT persist guest
     // Guest is session-only
 
-    // AppConstant.getUserToken = AppUrl.guest_user;
-    // AppConstant.isGuest = true; // runtime flag only
+    AppConstant.getUserToken = AppUrl.guest_user;
+    AppConstant.isGuest = true; // runtime flag only
 
     // Clear any previous login response
     _loginResponse = null;
     notifyListeners();
 
     // Navigate to Home / NavBar
-    //Get.offAll(() => const HomeScreen()); // or NavBarScreen if used
+    Get.offAll(() => HomeScreen()); // or NavBarScreen if used
 
     // Show message
     Get.snackbar(
@@ -140,7 +148,7 @@ class LoginProvider with ChangeNotifier {
 
     // 3️⃣ Clear old profile data
     try {
-      //Provider.of<ProfileProvider>(Get.context!, listen: false).clearProfile();
+      Provider.of<ProfileProvider>(Get.context!, listen: false).clearProfile();
     } catch (e) {
       debugPrint("⚠️ ProfileProvider not found: $e");
     }

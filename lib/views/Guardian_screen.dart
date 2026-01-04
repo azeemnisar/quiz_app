@@ -3,6 +3,8 @@ import 'package:cognitive_quiz/utills/colors.dart';
 import 'package:cognitive_quiz/utills/custom_image.dart';
 import 'package:cognitive_quiz/utills/images.dart';
 import 'package:cognitive_quiz/views/basic_info.dart';
+import 'package:cognitive_quiz/views/home_screen.dart';
+import 'package:cognitive_quiz/views/signin_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
