@@ -10,17 +10,6 @@ import 'package:cognitive_quiz/views/quizzes_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-// import 'package:quiz/Controller/perform_quiz_controller.dart';
-// import 'package:quiz/api_Services/app_url.dart';
-// import 'package:quiz/provider/profile_provider.dart';
-// import 'package:quiz/utils/colors.dart';
-// import 'package:quiz/views/category_quiz_screen.dart';
-// import 'package:quiz/views/map_screen.dart';
-// import 'package:quiz/views/message_screen.dart';
-// import 'package:quiz/views/profile_view.dart';
-// import 'package:quiz/views/quizzes_screen.dart';
-// import 'package:quiz/views/videotraining_screeen.dart';
-// import 'package:quiz/views/your_quezzesscreen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -61,8 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
     final List<Widget> pages = [
       _homePage(screenWidth, screenHeight),
       Quizzes(),
-      // VideoTrainingsScreen(),
-      // GoogleMapPage(doctorRecommendations: []),
     ];
 
     return Scaffold(

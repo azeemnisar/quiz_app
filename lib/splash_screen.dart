@@ -6,11 +6,6 @@ import 'package:cognitive_quiz/views/welcome1_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-// import 'package:quiz/utils/app_consultant.dart';
-// import 'package:quiz/utils/colors.dart';
-// import 'package:quiz/utils/images.dart';
-// import 'package:quiz/views/home_screen.dart';
-// import 'package:quiz/views/welcome1_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

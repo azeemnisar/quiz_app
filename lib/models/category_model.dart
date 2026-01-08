@@ -5,13 +5,6 @@ class CategoryModel {
 
   CategoryModel({required this.id, required this.name, required this.hashid});
 
-  //   factory CategoryModel.fromJson(Map<String, dynamic> json) {
-  //     return CategoryModel(
-  //       id: json['id'] ?? 0,
-  //       name: json['name'] ?? '',
-  //       hashid: json['hashid'] ?? '',
-  //     );
-  //   }
   factory CategoryModel.fromJson(Map<String, dynamic> json) {
     return CategoryModel(
       id: int.tryParse(json['id'].toString()) ?? 0,
@@ -53,23 +46,6 @@ class QuizModel {
     required this.ageRange,
     required this.levelName,
   });
-
-  // factory QuizModel.fromJson(Map<String, dynamic> json) {
-  //   return QuizModel(
-  //     id: json['id'] ?? 0,
-  //     categoryId: json['category_id'] ?? 0,
-  //     ageLevelId: json['age_level_id'] ?? 0,
-  //     levelId: json['level_id'] ?? 0,
-  //     title: json['title'] ?? '',
-  //     description: json['description'] ?? '',
-  //     createdAt: json['created_at'] ?? '',
-  //     updatedAt: json['updated_at'] ?? '',
-  //     hashid: json['hashid'] ?? '',
-  //     category: CategoryModel.fromJson(json['category'] ?? {}),
-  //     ageRange: json['age']?['range'] ?? '',
-  //     levelName: json['level']?['name'] ?? '',
-  //   );
-  // }
 
   factory QuizModel.fromJson(Map<String, dynamic> json) {
     return QuizModel(
@@ -118,15 +94,6 @@ class QuizResponse {
     required this.quiz,
     required this.count,
   });
-
-  // factory QuizResponse.fromJson(Map<String, dynamic> json) {
-  //   return QuizResponse(
-  //     success: json['success'] ?? false,
-  //     message: json['message'] ?? '',
-  //     quiz: QuizModel.fromJson(json['quiz'] ?? {}),
-  //     count: json['count'] ?? 0,
-  //   );
-  // }
 
   factory QuizResponse.fromJson(Map<String, dynamic> json) {
     return QuizResponse(

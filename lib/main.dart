@@ -20,8 +20,8 @@ void main() {
     MultiProvider(
       providers: [
         //ChangeNotifierProvider(create: (_) => LoginProvider()),
-        // ChangeNotifierProvider(create: (_) => RegisterProvider()),
-        // ChangeNotifierProvider(create: (_) => OtpProvider()),
+        ChangeNotifierProvider(create: (_) => RegisterProvider()),
+        //ChangeNotifierProvider(create: (_) => OtpProvider()),
         // ChangeNotifierProvider(create: (_) => LoginProvider()),
         // ChangeNotifierProvider(create: (_) => GuardianProvider()),
         // ChangeNotifierProvider(create: (_) => BasicInfoProvider()),
